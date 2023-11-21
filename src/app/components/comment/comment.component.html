@@ -1,0 +1,26 @@
+<div class="max-w-[500px] w-full shadow-sm rounded-xl border p-6">
+  <div class="flex justify-between w-full">
+    <div class="flex gap-4">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2AAwKjL22_WatiyWCHJ0FW6GH79sPAYZbQ&usqp=CAU" alt="Profile Picture" class="w-[65px] h-[65px] rounded-full ">
+      <div>
+        <h1>Alfredo Patrício</h1>
+        <p class="text-xs text-[#717171]">Postado a 2 dias atrás</p>
+      </div>
+    </div>
+  </div>
+  <p class="text-justify text-sm mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quod quis optio pariatur suscipit et doloremque repudiandae? Ut numquam molestias nostrum rem asperiores quibusdam ea odio consequuntur, cumque quam esse?</p>
+  <div class="mt-6 flex justify-between">
+    <div class="flex gap-6 w-full">
+      <span class="text-xs cursor-pointer text-indigo-400">Like</span>
+      <span class="text-xs cursor-pointer text-indigo-400">Comment</span>
+      <span class="text-xs cursor-pointer text-indigo-400">Repost</span>
+      <span class="text-xs cursor-pointer text-indigo-400">Share</span>
+    </div>
+    <div class="w-full flex justify-end text-[#717171] text-xs">
+      0 likes
+    </div>
+  </div>
+  <div *ngIf="isCreator" class="bg-indigo-600 text-white p-2 text-center rounded-xl mt-6">
+    Remover
+  </div>
+</div>
