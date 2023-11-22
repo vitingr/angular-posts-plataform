@@ -16,14 +16,14 @@ export class HomeComponent {
 
   comments = signal<Comment[]>([])
 
-
   ngOnInit(): void {
-
+    this.getComments()
   }
 
   getComments(): any {
     this.commentService.getComments().subscribe((comments: Comment[]) => {
       this.comments.set(comments)
+      console.log(comments)
     })
   }
 }

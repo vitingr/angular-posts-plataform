@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Comment } from '../../../../types';
 
 @Component({
   selector: 'app-comment',
@@ -10,4 +11,6 @@ import { CommonModule } from '@angular/common';
 })
 export class CommentComponent {
   isCreator: boolean = true
+  
+  @Input() comment!: Comment
 }

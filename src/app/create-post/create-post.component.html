@@ -1,4 +1,4 @@
 <section>
   <h1 class="text-2xl font-bold text-indigo-600">Criar Postagem</h1>
-  <app-comment-form></app-comment-form>
+  <app-comment-form (formSubmitted)="createComment($event)" placeholder="Digite algo..." buttonText="Publicar"></app-comment-form>
 </section>
