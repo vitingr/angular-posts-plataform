@@ -18,14 +18,15 @@ export class CreatePostComponent {
 
   comments = signal<any[]>([])
 
-
   createComment(formValues: { text: string }) {
     const { text } = formValues
     const user = this.userService.getUserFromStorage()
 
     if (!user) {
+      console.log("Não criando")
       return
     } else {
+      console.log("Criando")
       this.commentService.createComment({
         ownerId: user.id,
         ownerName: user.name,

@@ -28,6 +28,7 @@ export class UserService {
   // Função de Buscar usuário no banco de dados pelos cookies
   getUserFromStorage() {
     const user = localStorage.getItem(this.localStorageKey);
+    console.log(user)
     return user ? (JSON.parse(user) as User) : null;
   }
 }
